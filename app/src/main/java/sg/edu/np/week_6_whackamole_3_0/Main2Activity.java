@@ -27,7 +27,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     private static final String TAG = "Whack-A-Mole3.0!";
     EditText signUpUN;
     EditText signUpPW;
-    Button createCancelBtn;
+
     Button createBtn;
     MyDBHandler handler;
 
@@ -76,7 +76,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 finish();
             }
             else {
-                Log.v(TAG, FILENAME + ": User already exist during new user creation!");
+                Log.v(TAG, FILENAME + " exist");
                 makeToast("User Already Exist.\nPlease Try Again.");
             }
         }

@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boolean result;
         UserData dbData = handler.findUser(userName);
         if (dbData != null) {
-            Log.v(TAG, FILENAME + ": Running Checks..." + dbData.getMyUserName() + ": " + dbData.getMyPassword() +" <--> "+ userName + " " + password);
+
             if (dbData.getMyUserName().equals(userName) && dbData.getMyPassword().equals(password)) {
 
                 result = true;
@@ -76,20 +76,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-        Log.v(TAG, FILENAME + ": Create new user!");
+
         Intent in = new Intent(MainActivity.this, Main2Activity.class);
         startActivity(in);
     }
 
     //when Login button is clicked
     public void OnClick2(View v) {
-        Log.v(TAG, FILENAME + ": Logging in with: " + userNameEditText.getText().toString() + ": " + pwEditText.getText().toString());
+
         String inputUsername = userNameEditText.getText().toString();
         String inputPw = pwEditText.getText().toString();
         boolean result = isValidUser(inputUsername, inputPw);
 
         if (result) {
-            Log.v(TAG, FILENAME + ": Valid User! Logging in");
+
 
             Intent in = new Intent(MainActivity.this, Main3Activity.class);
             in.putExtra("Username", inputUsername);

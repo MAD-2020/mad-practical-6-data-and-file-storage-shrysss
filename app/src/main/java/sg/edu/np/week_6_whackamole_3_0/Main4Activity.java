@@ -277,12 +277,12 @@ public class Main4Activity extends AppCompatActivity implements View.OnClickList
             Button secondMoleBtn = (Button) findViewById(BUTTON_IDS[secondRanLocation]);
             secondMoleBtn.setText("*");
         }
-        Log.v(TAG, FILENAME + ": New Mole Location!");
+
     }
 
     private void updateUserScore(CountDownTimer newMolePlaceTimer, CountDownTimer readyTimer)
     {
-        Log.v(TAG, FILENAME + ": Update User Score...");
+
 
      /* Hint:
         This updates the user score to the database if needed. Also stops the timers.

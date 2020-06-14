@@ -18,6 +18,8 @@ public class CustomScoreViewHolder extends RecyclerView.ViewHolder {
     TextView LevelNumbers;
     TextView highestScoreTextView;
     ConstraintLayout parentLayout;
+    TextView levelNumTextView;
+
 
     public CustomScoreViewHolder(final View itemView){
         super(itemView);
@@ -28,5 +30,6 @@ public class CustomScoreViewHolder extends RecyclerView.ViewHolder {
         LevelNumbers = itemView.findViewById(R.id.LevelNumbers);
         highestScoreTextView = itemView.findViewById(R.id.Highscore);
         parentLayout = itemView.findViewById(R.id.parentLayout);
+        levelNumTextView = itemView.findViewById(R.id.LevelNumbers);
     }
 }

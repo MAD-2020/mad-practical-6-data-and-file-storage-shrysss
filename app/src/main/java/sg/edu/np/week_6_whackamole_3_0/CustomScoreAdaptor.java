@@ -56,12 +56,12 @@ public class CustomScoreAdaptor extends RecyclerView.Adapter<CustomScoreViewHold
         int info2 = userScores.get(position);
         holder.highestScoreTextView.setText(String.valueOf(info2));
 
-        Log.v(TAG, FILENAME + " Showing level " + levels.get(position) + " with highest score: " + userScores.get(position));
+
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v(TAG, FILENAME+ ": Load level " + levels.get(position) +" for: " + username);
+                Log.v(TAG, FILENAME+ " level " + levels.get(position) + username);
                 listener.startLevel(levels.get(position), username);
             }
         });
